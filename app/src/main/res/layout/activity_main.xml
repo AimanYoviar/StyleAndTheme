@@ -12,6 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,25 +38,29 @@
             android:drawablePadding="4dp"
             android:gravity="center_vertical"
             android:padding="8dp"
-            android:text="6 Photos"
+            android:text="@string/dummy_photos"
             android:textColor="@android:color/white"/>
 
+    </FrameLayout>
+
+
+
         <TextView
-            style="@style/TextContent.Small.White"
+            style="@style/TextContent.Black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:text="$735"
+            android:text="@string/dummy_value"
 
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
 
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="8dp"
+
             android:textColor="@android:color/black"/>
 
         <TextView
-            style="@style/TextContent.Small.White"
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Stock hanya 5 buah"
@@ -64,19 +71,19 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
         <TextView
-            style="@style/TextContent.Small.White"
+            style="@style/TextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/content_text"
 
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
             android:lineSpacingMultiplier="1"
             android:textColor="@android:color/black"/>
 
         <TextView
-            style="@style/TextContent.Small.White"
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Spesifikasi"
@@ -100,7 +107,7 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    style="@style/TextContent.Small.White"
+                    style="@style/TextSpec.Value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -108,7 +115,7 @@
                     android:text="Display"/>
 
                 <TextView
-                    style="@style/TextContent.Small.White"
+                    style="@style/TextSpec.Value"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -148,14 +155,14 @@
             android:layout_marginBottom="8dp">
 
             <TextView
-                style="@style/TextContent.Small.White"
+                style="@style/TextSpec.Field"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:layout_marginRight="@dimen/activity_vertical_margin"
                 android:text="Battery"/>
             <TextView
-                style="@style/TextContent.Small.White"
+                style="@style/TextSpec.Field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
@@ -167,7 +174,7 @@
         </TableLayout>
 
         <TextView
-            style="@style/TextContent.Small.White"
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dijual oleh"
@@ -193,23 +200,35 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
             <TextView
-                style="@style/TextContent.Small.White"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-            android:layout_toRightOf="@+id/profile_image"
+                android:layout_toRightOf="@+id/profile_image"
                 android:text="Aiman Yoviar"
                 android:textColor="@android:color/black"
                 android:layout_centerVertical="true"/>
         </RelativeLayout>
 
         <Button
-            android:text="@string/buy"
-            style="@style/ButtonGeneral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
+            android:text="buy now"
+            style="@style/ButtonGeneral"
+            app:backgroundTint="@color/colorPrimary"
 
+
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <Button
+            style="@style/ButtonGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            app:backgroundTint="@color/colorPrimary"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
